@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2a2a2a;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    max-width: 100%;
+    width: 500px;
+    background: #023047;
+    margin: auto;
+    padding: 1rem;
+    height: 100vh;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-wrapper h1{
+    font-size: 3rem;
+}
+
+.notes-img{
+    width: 3.7rem;
+}
+
+.app-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 2rem 0rem;
+}
+
+.app-wrapper input{
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    padding: 0rem 0.6rem;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+
+.app-wrapper button{
+    height: 2.5rem;
+    width: 8rem;
+    border: none;
+    outline: none;
+    background: #ff5f08;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    border-radius: 3rem;
+}
+
+.task-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem 0rem;
+    background: #edede9;
+    border-radius: 0.5rem;
+}
+
+.remove-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 5rem;
+    background: #ff0000;
+    cursor: pointer;
+    color: #fff;
+}
+

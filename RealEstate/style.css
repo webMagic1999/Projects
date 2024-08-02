@@ -1,0 +1,816 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+
+:root {
+    --font-family--: 'IBM Plex Sans'
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Hero Section and Navbar */
+#hero-section {
+    background:  center/cover no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+header {
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 60%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburger {
+    display: none;
+}
+
+header ul {
+    gap: 2.5rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-family: var(--font-family--);
+    font-size: 1rem;
+    color: #ffffff;
+    border-bottom: none;
+    transition: border-bottom 0.3s ease-in-out;
+    padding-bottom: 0.4rem;
+}
+
+header ul li .active {
+    border-bottom: 0.15rem solid #d00000;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 0.15rem solid #d00000;
+}
+
+header ul li button {
+    height: 3rem;
+    width: 12rem;
+    background: #d00000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: var(--font-family--);
+}
+
+/* sticky navbar css */
+
+#header {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 99;
+    box-shadow: 3px 0px 8px #3d3d3d;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+
+
+
+.sticky header ul li a {
+    color: #000000;
+}
+
+.hero {
+    padding: 0rem 7rem;
+    height: 95vh;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.border-left {
+    border-left: #ffffff 2px solid;
+    padding-left: 2rem;
+    height: 60vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 2.7rem;
+}
+
+.border-left p {
+    font-size: 1.3rem;
+    font-family: var(--font-family--);
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.border-left h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: var(--font-family--);
+    color: #ffffff;
+}
+
+.border-left h1 strong {
+    font-weight: 500;
+}
+
+.border-left button {
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--font-family--);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.change-background-btns {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+
+/* Minimalistic Design */
+
+
+.minimalistic {
+    padding: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffef7;
+    gap: 4rem;
+}
+
+
+.mini-image {
+    width: 50%;
+    height: 100vh;
+}
+
+.mini-content {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+}
+
+.mini-content div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.mini-content div .border {
+    border: 0.01rem solid #d00000;
+    width: 5rem;
+}
+
+.mini-content div p {
+    font-family: var(--font-family--);
+    color: #d00000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.mini-content h2 {
+    font-size: 3.5rem;
+    font-family: var(--font-family--);
+    font-weight: 300;
+}
+
+.mini-content h2 strong {
+    font-weight: 600;
+}
+
+.mini-content p {
+    font-family: var(--font-family--);
+    font-size: 1.34rem;
+}
+
+.mini-content button {
+    height: 3.5rem;
+    width: 12rem;
+    background: #d00000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: var(--font-family--);
+    transition: transform 0.4s ease-in-out;
+}
+
+.mini-content button:hover {
+    transform: translateY(-0.3rem);
+}
+
+.mini-image {
+    background: url(./images/inner_image_01.jpg) center/cover no-repeat;
+}
+
+/* efficiency */
+
+.efficiency {
+    background: url(./images/background_01.jpg) center/cover no-repeat fixed;
+    /* background-position: fixed; */
+    padding: 8rem;
+    border-bottom: 0.25rem solid #d00000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.energy-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+
+.energy-content h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: var(--font-family--);
+    color: #ffffff;
+}
+
+.energy-content h2 strong {
+    font-weight: 700;
+}
+
+.energy-content p {
+    color: #ffffff;
+    font-family: var(--font-family--);
+    line-height: 1.8rem;
+}
+
+.deadlines {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.2rem;
+}
+
+.deadline-one p {
+    color: #ffffff;
+    font-family: var(--font-family--);
+    font-size: 0.8rem;
+}
+
+.bar-bg {
+    background: #ffffff6b;
+    padding: 0.4rem;
+}
+
+.bar-one {
+    border: 4px solid #ffffff;
+    width: 70%;
+    transition: 0.5s all ease;
+}
+
+
+/* Service */
+
+.main-service-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap: 2rem;
+}
+
+.main-service-wrapper div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fa-trowel-bricks,
+.fa-truck-ramp-box,
+.fa-helmet-safety,
+.fa-road-barrier {
+    font-size: 3rem;
+}
+
+.main-service-wrapper div h4 {
+    color: #d00000;
+    font-family: var(--font-family--);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.main-service-wrapper div p {
+    font-family: var(--font-family--);
+    font-size: 0.9rem;
+}
+
+.main-service-wrapper div button {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 3rem;
+    text-align: start;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: #d00000;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-service-wrapper div button:hover {
+    margin-left: 0.6rem;
+}
+
+.main-service-wrapper div button i {
+    font-size: 1.5rem;
+}
+
+/* Recent Project */
+
+.recent-project-bg {
+    background: url(./images/background_02.jpg) center/cover no-repeat;
+    height: 100vh;
+    width: 90vw;
+    position: relative;
+}
+
+.new-project {
+    height: 70%;
+    background: #ffffff;
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-left: 4px solid #d00000;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.new-project-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.new-project-title .border {
+    border: 0.01rem solid #d00000;
+    width: 5rem;
+}
+
+.new-project-title h5 {
+    font-family: var(--font-family--);
+    color: #d00000;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.new-project h2 {
+    font-size: 3.2rem;
+    font-family: var(--font-family--);
+    font-weight: 300;
+}
+
+.details-of-project .border {
+    border: solid 0.01rem #d0d0d0;
+}
+
+.details-of-project .start {
+    display: flex;
+    padding: 0.8rem 0rem;
+    justify-content: space-between;
+}
+
+.start p {
+    font-family: var(--font-family--);
+    font-size: 0.9rem;
+    color: #3d3d3d;
+}
+
+.important-buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.important-buttons button {
+    height: 3rem;
+    width: 12rem;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    font-size: 1rem;
+    transition: transform 0.4s ease-in-out;
+}
+
+.important-buttons button:hover {
+    transform: translateY(-0.3rem);
+}
+
+.important-buttons button i {
+    font-size: 1.3rem;
+}
+
+.important-buttons .view-more {
+    background: transparent;
+    color: #d00000;
+    border: 1px solid #d00000;
+}
+
+.important-buttons .download-pdf {
+    background: #d00000;
+    color: #ffffff;
+}
+
+/* New Projects */
+
+
+.new-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 7rem 4rem;
+    gap: 2rem;
+}
+
+.new-ones {
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.projects-details {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #ffffffc1;
+    border-left: 3px solid #d00000;
+    width: 300px;
+    padding: 2rem;
+    height: 10rem;
+    transition: all 0.5s ease;
+}
+
+.projects-details:hover {
+    height: 15rem;
+    background: #ffffffe3;
+}
+
+.project-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-title .border {
+    border: 0.01rem solid #d00000;
+    width: 3rem;
+}
+
+.project-title h4 {
+    font-family: var(--font-family--);
+    font-weight: 500;
+    color: #d00000;
+}
+
+.other-project-detail {
+    padding: 1rem 0rem;
+}
+
+.other-project-detail h3 {
+    font-size: 2.2rem;
+    font-family: var(--font-family--);
+    font-weight: 300;
+}
+
+.other-project-detail h3 strong {
+    font-weight: 600;
+}
+
+.details-button {
+    padding: 1rem 0rem 0rem;
+    display: none;
+}
+
+.projects-details:hover .details-button {
+    display: block;
+
+}
+
+.details-button button {
+    background: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    height: 2rem;
+    width: 10rem;
+    font-family: var(--font-family--);
+    border: none;
+    outline: none;
+    color: #d00000;
+    font-size: 0.825rem;
+    cursor: pointer;
+}
+
+/* sustainability project */
+
+.sustainability-project {
+    padding: 2rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sustain-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.sustain-content-wrapper h2 {
+    font-size: 3.5rem;
+    font-family: var(--font-family--);
+    font-weight: 300;
+}
+
+.sustain-content-wrapper p {
+    font-size: 1.1rem;
+    font-family: var(--font-family--);
+}
+
+.sustain-content-wrapper button {
+    height: 3.5rem;
+    width: 12rem;
+    background: #d00000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: var(--font-family--);
+    transition: transform 0.4s ease-in-out;
+}
+
+.sustain-content-wrapper button:hover {
+    transform: translateY(-0.3rem);
+}
+
+.sustainability-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sustain-carousel-images {
+    position: relative;
+}
+
+
+.sustain-carousel-images>div {
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sustain-carousel-images>div h6 {
+    font-size: 1rem;
+    text-align: center;
+    color: #d00000;
+    font-family: var(--font-family--);
+    font-weight: 300;
+}
+
+.sustain-carousel-images>div p {
+    font-size: 0.825rem;
+    font-family: var(--font-family--);
+}
+
+.buttons-dot button {
+    padding: 0.2rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #3d3d3d76;
+    cursor: pointer;
+}
+
+.buttons-dot button.active {
+    background: #d00000;
+}
+
+.sustain {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+
+
+/* mobile view */
+
+@media only screen and (max-width:525px) {
+    header {
+        display: block;
+    }
+
+    /* .menu.active ul{
+        background-color: #ffffff;
+    } */
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 15%;
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 1.4rem;
+    }
+
+
+    .menu-list {
+        background: #fffef7;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .menu.active .menu-list{
+        display: block;
+    }
+
+    .main-service-wrapper {
+        display: block;
+    }
+
+    /* sustainability */
+    .sustainability-project {
+        display: block;
+        padding: 2rem 0.5rem;
+    }
+
+    .sustain-carousel-images img {
+        width: 50%;
+    }
+
+    .hero {
+        padding: 0;
+        align-items: center;
+    }
+
+    .border-left {
+        border: none;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .minimalistic {
+        display: block;
+        padding: 2rem 0.5rem;
+    }
+
+    .mini-content {
+        width: 100%;
+        justify-content: flex-start;
+        height: 90vh;
+    }
+
+    .mini-image {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .efficiency {
+        padding: 3rem 0.5rem;
+        display: block;
+    }
+
+    .energy-content,
+    .deadlines {
+        width: 100%;
+    }
+
+    .new-project {
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+
+    .recent-project-bg {
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    .new-projects {
+        flex-direction: column;
+        padding: 4rem 1rem;
+    }
+
+    .important-buttons {
+        padding-top: 1rem;
+    }
+
+    .sustainability-carousel{
+        padding-top: 3rem;
+    }
+
+    .sustain-carousel-images img{
+        width: 100%;
+    }
+}

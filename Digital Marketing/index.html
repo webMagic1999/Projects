@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Marketing</title>
+
+
+    <!-- css links -->
+    <!-- my css -->
+    <link rel="stylesheet" href="assests/css/style.css" />
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+
+    <!-- Owl Carousel CSS necessary link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- js links -->
+    <!-- my js -->
+    <script src="assests/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="cmn-body">
+        <!-- mobile menu starts -->
+        <div class="bg-one-mob">
+            <!-- mobile navbar hidden in desktop -->
+            <div class="mobile-nav">
+                <div id="main">
+                    <div class="menu-icon" onclick="toggleNav()">☰</div>
+                    <span class="mb-side-logo ms-auto text-end"><img src="assests/images/logo/Logo.webp"
+                            alt="" /></span>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <div class="logo-close-container">
+                        <span class="mb-side-logo-inside"><img src="assests/images/logo/Logo.webp" alt="" /></span>
+                        <span><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+                    </div>
+                    <div class="mb-nav-links">
+                        <ul>
+                            <li class="dropdown" id="homeDropdown">
+                                <a class="dropdown-btn">
+                                    Home
+                                </a>
+
+                            </li>
+                            <li class="dropdown" id="servicesDropdown">
+                                <a class="dropdown-btn" onclick="toggleServicesSubMenu()">
+                                    Services
+                                    <i class="fas fa-plus" id="services-icon"></i>
+                                </a>
+                                <div class="submenu" id="services-submenu">
+                                    <ul class="submenu-content">
+                                        <li><a  href="./services/">Web Designing</a></li>
+                                        <li><a href="#">Custom Graphics</a></li>
+                                        <li><a href="#">Digital Marketing</a></li>
+                                        <li><a href="#">SEO Services</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">Blogs</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <!-- Other list items -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add the overlay div -->
+                <div class="overlay" id="overlay" onclick="closeNav()"></div>
+            </div>
+        </div>
+        <!-- mobile menu ends -->
+
+        <!-- desktop-header starts -->
+        <div class="bg-one-desk">
+            <!-- header for desktop -->
+            <div class="desktop-top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <p class="text-start">
+                                <a class="mobile-number-header" href=""><i aria-hidden="true"
+                                        class="fas fa-phone-alt"></i> +91 82873 32463</a>
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p class="text-center">
+                                <i aria-hidden="true" class="fas fa-envelope"></i> info@webdesigning.com
+                            </p>
+                        </div>
+                        <div class="col-7">
+                            <p class="text-end">Follow Us:</p>
+                        </div>
+                        <div class="col-1">
+                            <p class="text-end">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-whatsapp"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="border-only"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="col-3">
+                            <a class="navbar-brand" href="#"><img class="desktop-logo"
+                                    src="assests/images/logo/Logo.webp" alt="" /></a>
+                        </div>
+                        <div class="col-6 collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav m-auto">
+                                <a class="nav-link center-nav-desktop" href="#">Home</a>
+                                <div class="dropdown" id="servicesDropdown">
+                                    <a class="nav-link center-nav-desktop dropdown-toggle" href="#" role="button"
+                                        id="servicesDropdownLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="servicesDropdownLink">
+                                        <li><a class="dropdown-item" href="./services/">Web Designing</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Custom Graphics</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Digital Marketing</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">SEO Services</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="nav-link center-nav-desktop" href="#">Blogs</a>
+                                <a class="nav-link center-nav-desktop" href="#">About Us</a>
+                                <a class="nav-link center-nav-desktop cca" href="#">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-3 collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ms-auto">
+                                <a href="">
+                                    <button class="Quote-btn">Get A Free Quote</button>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <script>// JavaScript to add/remove class on scroll for smooth transition
+                window.addEventListener('scroll', function () {
+                    var header = document.querySelector('.desktop-nav');
+                    var scrollPosition = window.scrollY;
+
+                    if (scrollPosition > 100) { // Adjust this value as needed for when to add the fixed effect
+                        header.classList.add('fixed');
+                    } else {
+                        header.classList.remove('fixed');
+                    }
+                });
+
+
+                // // quote btn transistion
+                document.addEventListener("DOMContentLoaded", function () {
+                    var button = document.querySelector('.Quote-btn');
+                    button.classList.add('slide-in');
+                });
+            </script>
+
+        </div>
+        <!-- desktop-header ends -->
+
+        <!-- hero-part-body -->
+        <div class="hero-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="heading-content fade-in-element">
+                            <h1>
+                                <span class="first">Build a Brand with</span>
+                                <span class="second">THE WEB DESIGNING</span>
+                            </h1>
+                            <p>
+                                Welcome to The Web Designing, your trusted partner in digital marketing excellence. We are a team of passionate professionals dedicated to helping businesses thrive in the digital landscape. With a comprehensive suite of digital marketing services, we tailor strategies to suit your unique goals and drive measurable results.
+                            </p>
+                            <a href=""><button class="exp-btn">Explore More</button></a>
+                            <a href=""><button class="hire-btn">Hire Us Now</button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12"></div>
+                </div>
+            </div>
+            <script>// You can include JavaScript here if needed
+                window.addEventListener('load', function () {
+                    var heading = document.querySelector('.heading-content');
+                    heading.style.opacity = '1'; // Set opacity to 1 after the page has loaded
+                });</script>
+        </div>
+        <!-- hero-part-body -->
+    </div>
+    <!-- first content -->
+    <div class="first-content">
+        <div class="container">
+            <div class="row rare-style">
+                <div class="col-12 col-lg-3">
+                    <div class="text-center wrapper-box-services fade-in-element">
+                        <div>
+                            <span>
+                                <i aria-hidden="true" class="fas fa-list-alt first-content-icon"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <p>Services</p>
+                            <p class="top-services">High Quality Services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="text-center wrapper-box-services fade-in-element">
+                        <div>
+                            <span>
+                                <i aria-hidden="true" class="fas fa-clock first-content-icon"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <p>Deadline</p>
+                            <p class="top-services">Project On Time</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="text-center wrapper-box-services fade-in-element">
+                        <div>
+                            <span>
+                                <i aria-hidden="true" class="fas fa-phone-alt first-content-icon"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <p>Support</p>
+                            <p class="top-services">24/7 Quality Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="text-center wrapper-box-services fade-in-element">
+                        <div>
+                            <span>
+                                <i aria-hidden="true" class="fas fa-paint-brush first-content-icon"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <p>Design</p>
+                            <p class="top-services">Imagination and Creativity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- first content -->
+    <!-- second load content -->
+    <div class="second-load-content">
+        <div class="container">
+            <div class="row fade-in-element">
+                <div class="col-12 col-lg-6">
+                    <div class="about-and-exp">
+                        <h2>ABOUT US</h2>
+                        <h2>Enjoy The Best Experience</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-and-exp-t">
+                        <p>
+                            Welcome to The Web Designing, your trusted partner in digital marketing excellence. We are a team of passionate professionals dedicated to helping businesses thrive in the digital landscape. With a comprehensive suite of digital marketing services, we tailor strategies to suit your unique goals and drive measurable results.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blue-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 ">
+                        <div class="inner-wrapper fade-in-element" id="single-use">
+                            <h2>WHY US</h2>
+                            <h2>Best Digital Marketing Serivces Provider</h2>
+                            <p>
+                                TheWebDesigning stands as the brilliant digital marketing services provider, driving businesses to new heights. With expert strategies, innovative campaigns, and measurable results, we empower brands to thrive in the online industry.
+                            </p>
+                            <a href="">
+                                <button class="explore">Explore More</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="inner-wrapper-t">
+                            <img src="assests/images/pic-9.webp" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our services -->
+        <div class="our-service-wrapper-main">
+            <div class="service-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="heading-wrapper fade-in-element">
+                                <h2>Our Services</h2>
+                                <p>
+                                    Procuring education on consulted assurance in do. Is
+                                    sympathize he expression mr no travelling. Preference he he
+                                    at travelling in resolution. So striking at of to welcomed
+                                    resolved.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper-for-services fade-in-element">
+                                <div class="wrapper-icon">
+                                    <span><i aria-hidden="true" class="fas fa-clipboard-check"></i></span>
+                                </div>
+                                <div class="wrapper-service-content">
+                                    <h3>Search Engine Optimization</h3>
+                                    <p>
+                                        Enhance your online visibility and climb the search engine rankings with our SEO services. We employ proven strategies to optimize your website, attract organic traffic, and boost your brand's authority.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper-for-services fade-in-element">
+                                <div class="wrapper-icon">
+                                    <span><i aria-hidden="true" class="fas fa-paint-brush"></i></span>
+                                </div>
+                                <div class="wrapper-service-content">
+                                    <h3>Web Designing</h3>
+                                    <p>
+                                        Create a stunning online presence with our website design and development services. We build responsive, user-friendly websites that not only look great but also convert visitors into customers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper-for-services fade-in-element">
+                                <div class="wrapper-icon">
+                                    <span><i aria-hidden="true" class="fas fa-laptop-code"></i></span>
+                                </div>
+                                <div class="wrapper-service-content">
+                                    <h3>Custom Graphics</h3>
+                                    <p>
+                                        Procuring education on consulted assurance in do. Is
+                                        sympathize he expression mr no travelling. Preference he
+                                        he at travelling.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper-for-services fade-in-element">
+                                <div class="wrapper-icon">
+                                    <span><i aria-hidden="true" class="fas fa-paste"></i></span>
+                                </div>
+                                <div class="wrapper-service-content">
+                                    <h3>Digital Marketing</h3>
+                                    <p>
+                                        Procuring education on consulted assurance in do. Is
+                                        sympathize he expression mr no travelling. Preference he
+                                        he at travelling.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper-for-services fade-in-element">
+                                <div class="wrapper-icon">
+                                    <span><i aria-hidden="true" class="fas fa-list-alt"></i></span>
+                                </div>
+                                <div class="wrapper-service-content">
+                                    <h3>Pay-Per-Click (PPC) Advertising</h3>
+                                    <p>
+                                        Get instant visibility and targeted traffic with our PPC advertising solutions. We optimize campaigns to ensure maximum ROI, driving qualified leads and increasing your bottom line.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper-for-services fade-in-element">
+                                <div class="wrapper-icon">
+                                    <span><i aria-hidden="true" class="fas fa-chart-line"></i></span>
+                                </div>
+                                <div class="wrapper-service-content">
+                                    <h3>Social Media Marketing</h3>
+                                    <p>
+                                        Connect with your audience on popular social media platforms. Our social media experts will craft compelling campaigns to increase brand awareness, engagement, and drive conversions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper-for-services fade-in-element">
+                                <div class="wrapper-icon">
+                                    <span><i aria-hidden="true" class="fas fa-chart-line"></i></span>
+                                </div>
+                                <div class="wrapper-service-content">
+                                    <h3>Email Marketing</h3>
+                                    <p>
+                                        Build and nurture relationships with your audience through effective email campaigns. Our experts design, execute, and analyze email marketing strategies to maximize your reach and impact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper-for-services fade-in-element">
+                                <div class="wrapper-icon">
+                                    <span><i aria-hidden="true" class="fas fa-chart-line"></i></span>
+                                </div>
+                                <div class="wrapper-service-content">
+                                    <h3>Content Marketing</h3>
+                                    <p>
+                                        Engage your audience with valuable content. Our content marketing services include content creation, blogging, and strategy development to establish your brand as an industry authority.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper-for-services fade-in-element">
+                                <div class="wrapper-icon">
+                                    <span><i aria-hidden="true" class="fas fa-chart-line"></i></span>
+                                </div>
+                                <div class="wrapper-service-content">
+                                    <h3>Email Marketing</h3>
+                                    <p>
+                                        Build and nurture relationships with your audience through effective email campaigns. Our experts design, execute, and analyze email marketing strategies to maximize your reach and impact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our services -->
+        <!-- our premium support packs -->
+        <div class="premium-cards-pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="pricing-detail fade-in-element">
+                            <h2>Pricing Detail</h2>
+                            <div class="price-border"></div>
+                            <p>
+                                Procuring education on consulted assurance in do. Is
+                                sympathize he expression mr no travelling. Preference he he at
+                                travelling in resolution. So striking at of to welcomed
+                                resolved. Northward by described up household therefore
+                                attention. Excellence decisively nay man yet impression for
+                                contrasted remarkably.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="basic-wrapper ">
+                                    <h3>Static Pack</h3>
+                                    <p>Great For Start Up</p>
+                                    <p><sup>Rs</sup>4999<sup>99</sup></p>
+                                    <p>For Website Development</p>
+                                    <p>60% Advance</p>
+                                    <p>Upto 05 Pages Design</p>
+                                    <p>02 Page Revisions</p>
+                                    <p>Use of Your Logo and Color Scheme</p>
+                                    <p>Testimonials</p>
+                                    <p>Mobile Responsive</p>
+                                    <p>Optimized For Fatser Loading</p>
+                                    <p>SEO Friendly</p>
+                                    <p>SSL Secure</p>
+                                    <p>Hosting</p>
+                                    <p>Extra Supoport Rs.600/hour</p>
+                                    <div class="basic-wrapper-btn">
+                                        <a href="">
+                                            <button>Book Appointment</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="premium-wrapper ">
+                                    <h3>Dynamic Pack</h3>
+                                    <p class="text-white">Great For E-Commerce</p>
+                                    <p><sup>Rs</sup>14999<sup>99</sup></p>
+                                    <p class="text-white">For Website Development</p>
+                                    <p class="text-white">60% Advance</p>
+                                    <p class="text-white">05 Page Revisions</p>
+                                    <p class="text-white">Use of Your Logo and Color Scheme</p>
+                                    <p class="text-white">Mobile Responsive</p>
+                                    <p class="text-white">Social Media Integration</p>
+                                    <p class="text-white">Custom CMS Implementation</p>
+                                    <p class="text-white">Optimized For Faster Loading</p>
+                                    <p class="text-white">SEO Friendly</p>
+                                    <p class="text-white">SSL Secure</p>
+                                    <p class="text-white">Hosting</p>
+                                    <p class="text-white">Extra Support Rs.1000/Hour</p>
+                                    <div class="pro-wrapper-btn">
+                                        <a href="">
+                                            <button>Book Appointment</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="basic-wrapper new-panel ">
+                                    <h3>Pro Static Pack</h3>
+                                    <p>Great For Small Business</p>
+                                    <p><sup>Rs</sup>9999<sup>99</sup></p>
+                                    <p>For Website Development</p>
+                                    <p>60% Advance</p>
+                                    <p>More Than 10 Pages Design</p>
+                                    <p>03 Page Revisions</p>
+                                    <p>Use of Your Logo and Color Scheme</p>
+                                    <p>Testimonials</p>
+                                    <p>Mobile Responsive</p>
+                                    <p>Optimized For Fatser Loading</p>
+                                    <p>SEO Friendly</p>
+                                    <p>SSL Secure</p>
+                                    <p>Hosting</p>
+                                    <p>Extra Supoport Rs.600/hour</p>
+                                    <div class="basic-wrapper-btn">
+                                        <a href="">
+                                            <button>Book Appointment</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- our premium support packs -->
+        <!-- comparision graph -->
+        <div class="comparision-graph">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="women-image-wrapper">
+                            <img src="assests/images/women.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="stats fade-in-element">
+                                    <h2>Quarter Statistics</h2>
+                                    <p>
+                                        Procuring education on consulted assurance in do. Is
+                                        sympathize he expression mr no travelling. Preference he
+                                        he at travelling in resolution. So striking at of to
+                                        welcomed resolved. Northward by described up household
+                                        therefore attention. Excellence decisively nay man yet
+                                        impression for contrasted remarkably.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="canvas-wrapper">
+                                    <div id="comparisonGraphContainer">
+                                        <canvas id="comparisonGraph" width="720" height="450"></canvas>
+                                    </div>
+
+                                    <script>
+                                        const canvas = document.getElementById("comparisonGraph");
+                                        const ctx = canvas.getContext("2d");
+
+                                        // Data for software and mobile app quantities
+                                        const months = [
+                                            "July",
+                                            "August",
+                                            "September",
+                                            "October",
+                                            "November",
+                                            "December",
+                                        ];
+                                        const softwareQuantities = [1, 22, 19, 27, 41, 45]; // Example data for software
+                                        const mobileAppQuantities = [5, 15, 19, 35, 30, 43]; // Example data for mobile app
+
+                                        // Set colors for software and mobile app
+                                        const softwareColor = "#3394f6";
+                                        const mobileAppColor = "#ffa648";
+
+                                        // Draw the dual bar graph
+                                        function drawGraph() {
+                                            const barWidth = 20;
+                                            const spaceBetweenBars = 15;
+                                            const extraSpaceBetweenMonths = 65;
+                                            const maxValue = Math.max(
+                                                ...softwareQuantities,
+                                                ...mobileAppQuantities
+                                            );
+                                            const yScale = canvas.height / maxValue;
+
+                                            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                                            for (let i = 0; i < months.length; i++) {
+                                                // Calculate positions for each bar
+                                                const startX =
+                                                    i *
+                                                    (2 * barWidth +
+                                                        spaceBetweenBars +
+                                                        extraSpaceBetweenMonths);
+                                                const softwareX = startX + spaceBetweenBars;
+                                                const mobileAppX =
+                                                    startX + barWidth + spaceBetweenBars * 2;
+
+                                                // Draw software bar
+                                                const softwareBarHeight =
+                                                    softwareQuantities[i] * yScale;
+                                                ctx.fillStyle = softwareColor;
+                                                ctx.fillRect(
+                                                    softwareX,
+                                                    canvas.height - softwareBarHeight,
+                                                    barWidth,
+                                                    softwareBarHeight
+                                                );
+
+                                                // Draw mobile app bar
+                                                const mobileAppBarHeight =
+                                                    mobileAppQuantities[i] * yScale;
+                                                ctx.fillStyle = mobileAppColor;
+                                                ctx.fillRect(
+                                                    mobileAppX,
+                                                    canvas.height - mobileAppBarHeight,
+                                                    barWidth,
+                                                    mobileAppBarHeight
+                                                );
+
+                                                // Draw x-axis labels below the bars
+                                                ctx.fillStyle = "#000";
+                                                ctx.font = "700 20px Montserrat";
+                                                ctx.textAlign = "center";
+                                                ctx.fillText(
+                                                    months[i],
+                                                    mobileAppX + barWidth / 2,
+                                                    canvas.height - 5
+                                                );
+                                            }
+                                        }
+
+                                        drawGraph();
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- comparision graph -->
+        <!-- goals -->
+        <div class="goals">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="goals-heading-wrapper">
+                            <h2>Our Main Goals Step By Step</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="goals-image">
+                            <img src="assests/images/pic-9 (1).webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="timeline-wrapper">
+                            <main>
+                                <div class="timeline">
+                                    <div class="tl-content tl-content-active">
+                                        <div class="tl-header">
+                                            <span class="tl-marker"></span>
+                                            <p class="tl-title">Content Analyses</p>
+
+                                            <p>
+                                                <time class="tl-time" datetime="2023-06-20">
+                                                    June 20, 2023
+                                                </time>
+                                            </p>
+                                        </div>
+
+                                        <div class="tl-body">
+                                            <p>
+                                                Add multiple feature items, set different icons or
+                                                images for each feature and also give custom links if
+                                                needed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tl-content">
+                                        <div class="tl-header">
+                                            <span class="tl-marker"></span>
+                                            <p class="tl-title">Project Management</p>
+
+                                            <p>
+                                                <time class="tl-time" datetime="2023-06-18">
+                                                    June 18, 2023
+                                                </time>
+                                            </p>
+                                        </div>
+
+                                        <div class="tl-body">
+                                            <p>
+                                                Choose your style from three different layouts and two
+                                                unique icon background shapes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tl-content">
+                                        <div class="tl-header">
+                                            <span class="tl-marker"></span>
+                                            <p class="tl-title">CEO Friendly</p>
+
+                                            <p>
+                                                <time class="tl-time" datetime="2023-06-14">
+                                                    June 14, 2023
+                                                </time>
+                                            </p>
+                                        </div>
+
+                                        <div class="tl-body">
+                                            <p>
+                                                Show a connector line between each icon, changes its
+                                                color and style to fit your unique design.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tl-content">
+                                        <div class="tl-header">
+                                            <span class="tl-marker"></span>
+                                            <p class="tl-title">Project Starting</p>
+
+                                            <p>
+                                                <time class="tl-time" datetime="2023-06-14">
+                                                    June 14, 2023
+                                                </time>
+                                            </p>
+                                        </div>
+
+                                        <div class="tl-body">
+                                            <p>
+                                                Easily customize every aspect of your list from widget
+                                                styles but also you can give custom colors to each
+                                                item as well.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- goals -->
+        <!-- counter-and-numbers -->
+        <div class="counter-and-numbers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-3 text-center fade-in-element">
+                        <div class="counter" id="counter1">0%</div>
+                        <p>Projects Success</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center fade-in-element">
+                        <div class="counter" id="counter2">0k+</div>
+                        <p>Trusted Clients</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center fade-in-element">
+                        <div class="counter" id="counter3">0</div>
+                        <p>Awards & Recognition</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center fade-in-element">
+                        <div class="counter" id="counter4">0</div>
+                        <p>Professional Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- counter-and-numbers -->
+    </div>
+    <!-- second load content -->
+    <!-- testimonnials -->
+
+    <div class="desktop-crousle">
+        <div class="container-fluid pb-1 pt-1">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="owl-slider">
+                        <div id="carousel" class="owl-carousel">
+                            <div class="item">
+                                <div class="text-center">
+                                    <span>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <p>The him father parish looked has sooner. Attachment frequently gay terminated
+                                        son. You greater nay use prudent placing. Passage to so distant behaved natural
+                                        between do talking. Friends off her windows painful. Still gay event you being
+                                        think nay for. In three aware point.</p>
+                                    <div class="d-flex flex-column align-items-center">
+
+                                        <img src="assests/images/testi/Human-1.jpg" alt=""
+                                            class="img-fluid rounded-circle">
+
+                                        <p>Khushi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="text-center">
+                                    <span>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <p>The him father parish looked has sooner. Attachment frequently gay terminated
+                                        son. You greater nay use prudent placing. Passage to so distant behaved natural
+                                        between do talking. Friends off her windows painful. Still gay event you being
+                                        think nay for. In three aware point.</p>
+                                    <div class="d-flex flex-column align-items-center">
+
+                                        <img src="assests/images/testi/Human-2.jpg" alt=""
+                                            class="img-fluid rounded-circle">
+
+                                        <p>Khushi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="text-center">
+                                    <span>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <p>The him father parish looked has sooner. Attachment frequently gay terminated
+                                        son. You greater nay use prudent placing. Passage to so distant behaved natural
+                                        between do talking. Friends off her windows painful. Still gay event you being
+                                        think nay for. In three aware point.</p>
+                                    <div class="d-flex flex-column align-items-center">
+
+                                        <img src="assests/images/testi/Human-3.jpg" alt=""
+                                            class="img-fluid rounded-circle">
+
+                                        <p>Khushi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="text-center">
+                                    <span>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <p>The him father parish looked has sooner. Attachment frequently gay terminated
+                                        son. You greater nay use prudent placing. Passage to so distant behaved natural
+                                        between do talking. Friends off her windows painful. Still gay event you being
+                                        think nay for. In three aware point.</p>
+                                    <div class="d-flex flex-column align-items-center">
+
+                                        <img src="assests/images/testi/Human-4.jpg" alt=""
+                                            class="img-fluid rounded-circle">
+
+                                        <p>Khushi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--carousel1 end-->
+    <!-- testimonnials -->
+
+
+    <!-- blogs start -->
+    <div class="blogs-main-wrapper">
+        <div class="container">
+            <div class="row">
+                <h2>Latest Blogs</h2>
+                <div class="col-12 col-lg-4">
+                    <div class="blog-inside-wrap">
+                        <img src="assests/images/blogs/pic-13.jpg" alt="">
+                        <div class="blog-preview-wrap">
+                            <a href="">
+                                <h3>Sources For Digital Marketing</h3>
+                            </a>
+                            <p><a href="">May 18 2022</a> / <a href="">1 Comment</a></p>
+                            <p>Knowledge nay estimable questions repulsive daughters boy. Solicitude gay way unaffected
+                                expression for. His mistress ladyship required off horrible disposed…</p>
+                            <a class="read-more-links" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="blog-inside-wrap">
+                        <img src="assests/images/blogs/pic-14.jpg" alt="">
+                        <div class="blog-preview-wrap">
+                            <a href="">
+                                <h3>Stories About Digital Marketing</h3>
+                            </a>
+                            <p><a href="">May 18 2022</a> / <a href="">1 Comment</a></p>
+                            <p>Two before narrow not relied how except moment myself. Dejection assurance mrs led
+                                certainly. So gate at no only none…</p>
+                            <a class="read-more-links" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="blog-inside-wrap">
+                        <img src="assests/images/blogs/pic-15.jpg" alt="">
+                        <div class="blog-preview-wrap">
+                            <a href="">
+                                <h3>Digital Marketing Explained</h3>
+                            </a>
+                            <p><a href="">May 18 2022</a> / <a href="">1 Comment</a></p>
+                            <p>Bringing so sociable felicity supplied mr. September suspicion far him two acuteness
+                                perfectly. Covered as an examine so regular of.…</p>
+                            <a class="read-more-links" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="blog-load-btn-wrapper">
+                        <a href="">
+                            <button>Load More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blogs start -->
+
+    <!-- Query Form -->
+    <!-- form here is to be made after some time stay updated -->
+
+    <!-- Query Form -->
+
+    <!-- our partners -->
+    <div class="our-partners-main-wrapper">
+        <div class="container">
+            <div class="row">
+                <h2>Our Partners</h2>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="partner-wraps">
+                        <img src="assests/images/partners/pic-1.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="partner-wraps">
+                        <img src="assests/images/partners/pic-2.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="partner-wraps">
+                        <img src="assests/images/partners/pic-3.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="partner-wraps">
+                        <img src="assests/images/partners/pic-4.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="partner-wraps">
+                        <img src="assests/images/partners/pic-5.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="partner-wraps">
+                        <img src="assests/images/partners/pic-1.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="partner-wraps">
+                        <img src="assests/images/partners/pic-1.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <div class="partner-wraps">
+                        <img src="assests/images/partners/pic-1.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our partners -->
+
+
+    <!-- footer -->
+    <div class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <div class="col-12">
+                        <div class="footer-logo">
+                            <img src="assests/images/logo/Logo.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="social-icons-mb">
+                            <span><a href=""><i class="fab fa-facebook-f"></i></a></span>
+                            <span><a href=""><i class="fab fa-whatsapp"></i></a></span>
+                            <span><a href=""><i class="fab fa-instagram"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 col-lg-2">
+                    <div class="footer-link-wrap">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><span><i aria-hidden="true"
+                                        class="fas fa-xl fa-envelope"></i></span><span>info@webdesigning.com</span></li>
+                            <li><span><i aria-hidden="true" class="fas fa-phone-alt"></i></span><span>+91 82873
+                                    32463</span></li>
+                            <li><span><i aria-hidden="true" class="fas fa-map-marker-alt"></i></span><span>Greater
+                                    Noida, Uttar Pradesh, 201306</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-2">
+                    <div class="footer-link-wrap">
+                        <h4>Quick Links</h4>
+                        <p>Testimonials</p>
+                        <p>Pricing</p>
+                        <p>Single Project</p>
+                        <p>Single Prost</p>
+                        <p>Portfolio</p>
+                    </div>
+                </div>
+                <div class="col-7 col-lg-2">
+                    <div class="footer-link-wrap">
+                        <h4>Support Links</h4>
+                        <p>Testimonials</p>
+                        <p>Pricing</p>
+                        <p>Single Project</p>
+                        <p>Single Prost</p>
+                        <p>Portfolio</p>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-2">
+                    <div class="footer-link-wrap">
+                        <h4>Information</h4>
+                        <p>Testimonials</p>
+                        <p>Pricing</p>
+                        <p>Single Project</p>
+                        <p>Single Prost</p>
+                        <p>Portfolio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <!-- owl carousel JS necessary -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        jQuery("#carousel").owlCarousel({
+            // animateOut: 'fadeOut',
+            // animateIn: 'fadeIn',
+            autoplay: true,
+            rewind: true,
+            margin: 0,
+            loop: true,
+            responsiveClass: true,
+            autoHeight: true,
+            autoplayTimeout: 7000,
+            smartSpeed: 800,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2,
+                },
+
+                320: {
+                    items: 1,
+                },
+
+                600: {
+                    items: 1,
+                },
+
+                1024: {
+                    items: 1,
+                },
+
+                1366: {
+                    items: 2,
+                },
+            },
+        });
+    </script>
+
+
+    <!-- fade-in effect  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.fade-in-element');
+
+            function fadeInElements() {
+                elements.forEach(element => {
+                    if (isElementInViewport(element)) {
+                        element.classList.add('fade-in');
+                    }
+                });
+            }
+
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            // Initial check for elements in the viewport on page load
+            fadeInElements();
+
+            // Add a scroll event listener to trigger the fade-in effect when elements enter the viewport
+            window.addEventListener('scroll', fadeInElements);
+        });
+
+    </script>
+</body>
+
+</html>

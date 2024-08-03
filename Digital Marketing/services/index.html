@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Digital Marketing</title>
+
+    <!-- css links -->
+    <!-- my css -->
+    <link rel="stylesheet" href="/assests/css/style.css" />
+    <link rel="stylesheet" href="services.css" />
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+
+    <!-- Owl Carousel CSS necessary link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- js links -->
+    <!-- my js -->
+    <script src="/assests/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="cmn-body-service">
+        <!-- mobile menu starts -->
+        <div class="bg-one-mob">
+            <!-- mobile navbar hidden in desktop -->
+            <div class="mobile-nav">
+                <div id="main">
+                    <div class="menu-icon" onclick="toggleNav()">☰</div>
+                    <span class="mb-side-logo ms-auto text-end"><img src="/assests/images/logo/Logo.webp"
+                            alt="" /></span>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <div class="logo-close-container">
+                        <span class="mb-side-logo-inside"><img src="/assests/images/logo/Logo.webp" alt="" /></span>
+                        <span><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+                    </div>
+                    <div class="mb-nav-links">
+                        <ul>
+                            <li class="dropdown" id="homeDropdown">
+                                <a class="dropdown-btn" onclick="toggleHomeSubMenu()">
+                                    Home
+                                    <i class="fas fa-plus" id="home-icon"></i>
+                                </a>
+                                <div class="submenu" id="home-submenu">
+                                    <ul class="submenu-content">
+                                        <li><a href="#">Submenu 1 for Home</a></li>
+                                        <li><a href="#">Submenu 2 for Home</a></li>
+                                        <!-- Add more submenu items as needed -->
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown" id="servicesDropdown">
+                                <a class="dropdown-btn" onclick="toggleServicesSubMenu()">
+                                    Services
+                                    <i class="fas fa-plus" id="services-icon"></i>
+                                </a>
+                                <div class="submenu" id="services-submenu">
+                                    <ul class="submenu-content">
+                                        <li><a href="#">Submenu 1 for Services</a></li>
+                                        <li><a href="#">Submenu 2 for Services</a></li>
+                                        <!-- Add more submenu items as needed -->
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Blogs</a></li>
+                            <li><a href="">Contact</a></li>
+                            <!-- Other list items -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add the overlay div -->
+                <div class="overlay" id="overlay" onclick="closeNav()"></div>
+            </div>
+        </div>
+        <!-- mobile menu ends -->
+
+        <!-- desktop-header starts -->
+        <div class="bg-one-desk">
+            <!-- header for desktop -->
+            <div class="desktop-top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <p class="text-start">
+                                <i aria-hidden="true" class="fas fa-phone-alt"></i> + (808)
+                                935-3870
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p class="text-center">
+                                <i aria-hidden="true" class="fas fa-envelope"></i> + (808)
+                                935-3870
+                            </p>
+                        </div>
+                        <div class="col-7">
+                            <p class="text-end">Follow Us:</p>
+                        </div>
+                        <div class="col-1">
+                            <p class="text-end">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-tumblr"></i>
+                                <i class="fab fa-instagram"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="border-only"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="col-3">
+                            <a class="navbar-brand" href="#"><img class="desktop-logo"
+                                    src="/assests/images/logo/Logo.webp" alt="" /></a>
+                        </div>
+                        <div class="col-6 collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav m-auto">
+                                <a class="nav-link center-nav-desktop" href="#">Home</a>
+                                <a class="nav-link center-nav-desktop" href="#">About</a>
+                                <div class="dropdown" id="servicesDropdown">
+                                    <a class="nav-link center-nav-desktop dropdown-toggle" href="#" role="button"
+                                        id="servicesDropdownLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="servicesDropdownLink">
+                                        <li><a class="dropdown-item" href="#">Branding</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Social Media</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Digital Marketing</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">SEO Services</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="nav-link center-nav-desktop" href="#">Blogs</a>
+                                <a class="nav-link center-nav-desktop cca" href="#">Contact</a>
+                            </div>
+                        </div>
+                        <div class="col-3 collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ms-auto">
+                                <a href="">
+                                    <button class="Quote-btn">Get A Free Quote</button>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <script>
+                // JavaScript to add/remove class on scroll for smooth transition
+                window.addEventListener("scroll", function () {
+                    var header = document.querySelector(".desktop-nav");
+                    var scrollPosition = window.scrollY;
+
+                    if (scrollPosition > 100) {
+                        // Adjust this value as needed for when to add the fixed effect
+                        header.classList.add("fixed");
+                    } else {
+                        header.classList.remove("fixed");
+                    }
+                });
+
+                // // quote btn transistion
+                document.addEventListener("DOMContentLoaded", function () {
+                    var button = document.querySelector(".Quote-btn");
+                    button.classList.add("slide-in");
+                });
+            </script>
+        </div>
+        <!-- desktop-header ends -->
+        <!-- services heading starts -->
+        <div class="service-heading-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading-wrapper-box">
+                            <h1 class="text-end">Services</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services heading ends -->
+    </div>
+    <!-- service content starts-->
+    <div class="service-main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="service-content-wrapper">
+                        <h2>Our Services</h2>
+                        <p>
+                            Procuring education on consulted assurance in do. Is sympathize
+                            he expression mr no travelling. Preference he he at travelling
+                            in resolution. So striking at of to welcomed resolved.
+                        </p>
+                        <ul>
+                            <li>
+                                <span><i class="fa fa-check" aria-hidden="true"></i></span><span>
+                                    Desirous men exercise overcame procured speaking her
+                                    followed.</span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-check" aria-hidden="true"></i></span><span>
+                                    Property men the why smallest graceful day insisted
+                                    required.</span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-check" aria-hidden="true"></i></span><span>
+                                    Situation admitting promotion at or to perceived be.</span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-check" aria-hidden="true"></i></span><span>
+                                    Acuteness allowance an at eagerness favourite in extensive
+                                    exquisite.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="services-container">
+                        <div class="different-services">
+                            <i class="far fa-edit"></i>
+                            <h3>Interactive Layouts</h3>
+                            <p>
+                                Hover mouse here to see backend content. Lorem beautiful
+                                worldwide ipsum dolor amet.
+                            </p>
+                            <div class="custom-overlay"></div>
+                            <div class="custom-overlay-content">
+                                <h3>Interactive Layouts</h3>
+                                <p>
+                                    Hover mouse here to see backend content. Lorem beautiful
+                                    worldwide ipsum dolor amet.
+                                </p>
+                                <a href="">
+                                    <button>vhbjn</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="services-container">
+                        <div class="different-services">
+                            <i class="fas fa-code"></i>
+                            <h3>Web Development</h3>
+                            <p>
+                                Hover mouse here to see backend content. Lorem beautiful
+                                worldwide ipsum dolor amet.
+                            </p>
+                            <div class="custom-overlay"></div>
+                            <div class="custom-overlay-content">
+                                Content for the overlay goes here.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="services-container">
+                        <div class="different-services">
+                            <i class="far fa-chart-bar"></i>
+                            <h3>SEO Optimising</h3>
+                            <p>
+                                Hover mouse here to see backend content. Lorem beautiful
+                                worldwide ipsum dolor amet.
+                            </p>
+                            <div class="custom-overlay"></div>
+                            <div class="custom-overlay-content">
+                                Content for the overlay goes here.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="services-container">
+                        <div class="different-services">
+                            <i class="fa fa-mobile"></i>
+                            <h3>Mobile First</h3>
+                            <p>
+                                Hover mouse here to see backend content. Lorem beautiful
+                                worldwide ipsum dolor amet.
+                            </p>
+                            <div class="custom-overlay"></div>
+                            <div class="custom-overlay-content">
+                                Content for the overlay goes here.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service content ends-->
+    <!-- service solutions  starts-->
+    <div class="main-marketing-wrapper">
+        <div class="marketing-solutions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="marketing-solutions-heading">
+                            <h4 class="text-white">WHY US</h4>
+                            <h3 class="text-white">Best Internet Marketing Solutions</h3>
+                            <p class="text-white">
+                                Procuring education on consulted assurance in do. Is
+                                sympathize he expression mr no travelling. Preference he he at
+                                travelling in resolution. So striking at of to welcomed
+                                resolved. Northward by described up household therefore
+                                attention. Excellence.
+                            </p>
+                            <ul>
+                                <li>
+                                    <span><i class="fa fa-check"></i></span><span>
+                                        Desirous men exercise overcame procured speaking her
+                                        followed.</span>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-check"></i></span><span>
+                                        Property men the why smallest graceful day insisted
+                                        required.</span>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-check"></i></span><span>
+                                        Situation admitting promotion at or to perceived be.</span>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-check"></i></span><span>
+                                        Acuteness allowance an at eagerness favourite in extensive
+                                        exquisite.</span>
+                                </li>
+                            </ul>
+                            <button><a href="">Explore More</a></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="only-desktop-image">
+                            <img src="/assests/images/services images/pic-32.webp" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service solutions  ends -->
+    <!-- pricing section in services start -->
+    <div class="premium-cards-pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="pricing-detail">
+                        <h2>Pricing Detail</h2>
+                        <div class="price-border"></div>
+                        <p>
+                            Procuring education on consulted assurance in do. Is sympathize
+                            he expression mr no travelling. Preference he he at travelling
+                            in resolution. So striking at of to welcomed resolved. Northward
+                            by described up household therefore attention. Excellence
+                            decisively nay man yet impression for contrasted remarkably.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="basic-wrapper">
+                                <h3>Static Pack</h3>
+                                <p>Great For Start Up</p>
+                                <p><sup>Rs</sup>4999<sup>99</sup></p>
+                                <p>For Website Development</p>
+                                <p>60% Advance</p>
+                                <p>Upto 05 Pages Design</p>
+                                <p>02 Page Revisions</p>
+                                <p>Use of Your Logo and Color Scheme</p>
+                                <p>Testimonials</p>
+                                <p>Mobile Responsive</p>
+                                <p>Optimized For Fatser Loading</p>
+                                <p>SEO Friendly</p>
+                                <p>SSL Secure</p>
+                                <p>Hosting</p>
+                                <p>Extra Supoport Rs.600/hour</p>
+                                <div class="basic-wrapper-btn">
+                                    <a href="">
+                                        <button>Book Appointment</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="premium-wrapper">
+                                <h3>Dynamic Pack</h3>
+                                <p class="text-white">Great For E-Commerce</p>
+                                <p><sup>Rs</sup>14999<sup>99</sup></p>
+                                <p class="text-white">For Website Development</p>
+                                <p class="text-white">60% Advance</p>
+                                <p class="text-white">05 Page Revisions</p>
+                                <p class="text-white">Use of Your Logo and Color Scheme</p>
+                                <p class="text-white">Mobile Responsive</p>
+                                <p class="text-white">Social Media Integration</p>
+                                <p class="text-white">Custom CMS Implementation</p>
+                                <p class="text-white">Optimized For Faster Loading</p>
+                                <p class="text-white">SEO Friendly</p>
+                                <p class="text-white">SSL Secure</p>
+                                <p class="text-white">Hosting</p>
+                                <p class="text-white">Extra Support Rs.1000/Hour</p>
+                                <div class="pro-wrapper-btn">
+                                    <a href="">
+                                        <button>Book Appointment</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="basic-wrapper new-panel">
+                                <h3>Pro Static Pack</h3>
+                                <p>Great For Small Business</p>
+                                <p><sup>Rs</sup>9999<sup>99</sup></p>
+                                <p>For Website Development</p>
+                                <p>60% Advance</p>
+                                <p>More Than 10 Pages Design</p>
+                                <p>03 Page Revisions</p>
+                                <p>Use of Your Logo and Color Scheme</p>
+                                <p>Testimonials</p>
+                                <p>Mobile Responsive</p>
+                                <p>Optimized For Fatser Loading</p>
+                                <p>SEO Friendly</p>
+                                <p>SSL Secure</p>
+                                <p>Hosting</p>
+                                <p>Extra Supoport Rs.600/hour</p>
+                                <div class="basic-wrapper-btn">
+                                    <a href="">
+                                        <button>Book Appointment</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pricing section in services end -->
+    <!-- testimonnials -->
+    <div class="desktop-crousle">
+        <div class="container-fluid pb-1 pt-1">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="owl-slider">
+                        <div id="carousel" class="owl-carousel">
+                            <div class="item">
+                                <div class="text-center">
+                                    <span>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <p>
+                                        The him father parish looked has sooner. Attachment
+                                        frequently gay terminated son. You greater nay use prudent
+                                        placing. Passage to so distant behaved natural between do
+                                        talking. Friends off her windows painful. Still gay event
+                                        you being think nay for. In three aware point.
+                                    </p>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/assests/images/testi/Human-1.jpg" alt=""
+                                            class="img-fluid rounded-circle" />
+                                        <p>Khushi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="text-center">
+                                    <span>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <p>
+                                        The him father parish looked has sooner. Attachment
+                                        frequently gay terminated son. You greater nay use prudent
+                                        placing. Passage to so distant behaved natural between do
+                                        talking. Friends off her windows painful. Still gay event
+                                        you being think nay for. In three aware point.
+                                    </p>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/assests/images/testi/Human-2.jpg" alt=""
+                                            class="img-fluid rounded-circle" />
+                                        <p>Khushi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="text-center">
+                                    <span>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <p>
+                                        The him father parish looked has sooner. Attachment
+                                        frequently gay terminated son. You greater nay use prudent
+                                        placing. Passage to so distant behaved natural between do
+                                        talking. Friends off her windows painful. Still gay event
+                                        you being think nay for. In three aware point.
+                                    </p>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/assests/images/testi/Human-3.jpg" alt=""
+                                            class="img-fluid rounded-circle" />
+                                        <p>Khushi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="text-center">
+                                    <span>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <p>
+                                        The him father parish looked has sooner. Attachment
+                                        frequently gay terminated son. You greater nay use prudent
+                                        placing. Passage to so distant behaved natural between do
+                                        talking. Friends off her windows painful. Still gay event
+                                        you being think nay for. In three aware point.
+                                    </p>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <img src="/assests/images/testi/Human-4.jpg" alt=""
+                                            class="img-fluid rounded-circle" />
+                                        <p>Khushi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--carousel1 end-->
+    <!-- testimonnials -->
+
+    <!-- footer -->
+    <div class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <div class="col-12">
+                        <div class="footer-logo">
+                            <img src="/assests/images/logo/Logo.webp" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="social-icons-mb">
+                            <span><a href=""><i class="fab fa-facebook-f"></i></a></span>
+                            <span><a href=""><i class="fab fa-whatsapp"></i></a></span>
+                            <span><a href=""><i class="fab fa-instagram"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 col-lg-2">
+                    <div class="footer-link-wrap">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>
+                                <span><i aria-hidden="true"
+                                        class="fas fa-xl fa-envelope"></i></span><span>info@webdesigning.com</span>
+                            </li>
+                            <li>
+                                <span><i aria-hidden="true" class="fas fa-phone-alt"></i></span><span>+91 82873
+                                    32463</span>
+                            </li>
+                            <li>
+                                <span><i aria-hidden="true" class="fas fa-map-marker-alt"></i></span><span>Greater
+                                    Noida, Uttar Pradesh, 201306</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-2">
+                    <div class="footer-link-wrap">
+                        <h4>Quick Links</h4>
+                        <p>Testimonials</p>
+                        <p>Pricing</p>
+                        <p>Single Project</p>
+                        <p>Single Prost</p>
+                        <p>Portfolio</p>
+                    </div>
+                </div>
+                <div class="col-7 col-lg-2">
+                    <div class="footer-link-wrap">
+                        <h4>Support Links</h4>
+                        <p>Testimonials</p>
+                        <p>Pricing</p>
+                        <p>Single Project</p>
+                        <p>Single Prost</p>
+                        <p>Portfolio</p>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-2">
+                    <div class="footer-link-wrap">
+                        <h4>Information</h4>
+                        <p>Testimonials</p>
+                        <p>Pricing</p>
+                        <p>Single Project</p>
+                        <p>Single Prost</p>
+                        <p>Portfolio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <!-- owl carousel JS necessary -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        jQuery("#carousel").owlCarousel({
+            // animateOut: 'fadeOut',
+            // animateIn: 'fadeIn',
+            autoplay: true,
+            rewind: true,
+            margin: 0,
+            loop: true,
+            responsiveClass: true,
+            autoHeight: true,
+            autoplayTimeout: 7000,
+            smartSpeed: 800,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2,
+                },
+
+                320: {
+                    items: 1,
+                },
+
+                600: {
+                    items: 1,
+                },
+
+                1024: {
+                    items: 1,
+                },
+
+                1366: {
+                    items: 2,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

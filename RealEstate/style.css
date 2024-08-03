@@ -695,6 +695,10 @@ header ul li button {
         background-color: #ffffff;
     } */
 
+    .border-left h1 {
+        font-size:4rem;
+    }
+
     .logo {
         display: flex;
         justify-content: space-between;

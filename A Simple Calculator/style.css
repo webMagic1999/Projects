@@ -61,7 +61,7 @@ body{
 .btn-wrapper {
     display: grid;
     height: 60vh;
-    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .btn-wrapper button {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator-box">
+            <h1>CALCULATOR</h1>
+            <div class="input-container">
+                <input type="text" readonly>
+            </div>
+
+            <div class="btn-wrapper">
+                <button id="all-clear">AC</button>
+                <button id="delete" >DEL</button>
+                <button id="square">^2</button>
+                <button id="sq-root">√</button>
+                <button id=" show " onclick="displayExpression.value += '7'">7</button>
+                <button id=" show " onclick="displayExpression.value += '8'">8</button>
+                <button id=" show " onclick="displayExpression.value += '9'">9</button>
+                <button id=" show ">+</button>
+                <button id=" show " onclick="displayExpression.value += '4'">4</button>
+                <button id=" show " onclick="displayExpression.value += '5'">5</button>
+                <button id=" show " onclick="displayExpression.value += '6'">6</button>
+                <button id=" show " onclick="displayExpression.value += '-'">-</button>
+                <button id=" show " onclick="displayExpression.value += '1'">1</button>
+                <button id=" show " onclick="displayExpression.value += '2'">2</button>
+                <button id=" show " onclick="displayExpression.value += '3'">3</button>
+                <button id=" show " onclick="displayExpression.value += '*'">*</button>
+                <button id="evaluate">=</button>
+                <button id=" show " onclick="displayExpression.value += '0'">0</button>
+                <button id=" show " onclick="displayExpression.value += '.'">.</button>
+                <button id=" show " onclick="displayExpression.value += '+'">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

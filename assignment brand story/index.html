@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Story</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Script -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">EQUENCE</div>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Product</a>
+          <a href="#">Solutions</a>
+          <a href="#">Company</a>
+          <a href="#">Resources</a>
+          <a href="#" class="contact-btn">Contact Us</a>
+        </nav>
+        <button class="menu-btn" aria-label="Toggle Menu">☰</button>
+      </div>
+    </header>
+
+    <div class="side-menu">
+      <a href="#">Home</a>
+      <a href="#">Product</a>
+      <a href="#">Solutions</a>
+      <a href="#">Company</a>
+      <a href="#">Resources</a>
+      <a href="#" class="contact-btn">Contact Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+      <div class="content-main">
+        <h1>
+          Built for business where a unified CPaaS dominion elevates the synergy
+          of <span class="color-red">communication</span>
+        </h1>
+        <p>
+          Harness our AI-powered CPaaS platform for automated, personalized
+          customer communication, driving enhanced engagement and business
+          success.
+        </p>
+        <button class="cta-1">CTA 1</button>
+        <button class="cta-2">CTA 2</button>
+      </div>
+      <div class="hero-main-graphic">
+        <img
+          src="./images/man-with-phone-social-network-icons-social-media-digital-online-concept_73558-12375-removebg-preview.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Solution Starts -->
+    <div class="solutions-container">
+      <div class="solution-heading">
+        <h2>Solutions</h2>
+      </div>
+      <div class="solutions-list-pack">
+        <div class="solutions">
+          <div class="sub-heading-solution">
+            <h4>MARKETING</h4>
+            <p>Your Path to profitable marketing</p>
+            <button class="know-more">
+              <span>Know More &rarr;</span>
+            </button>
+          </div>
+          <div class="other-content">
+            <div class="border"></div>
+            <div class="sales-performance">
+              <h6>Sales Performance</h6>
+              <div class="border-sales"></div>
+              <div class="arrow-signs">
+                <div class="arrow color-red">
+                  <i class="fa-solid fa-arrow-trend-down"></i>
+                </div>
+                <div class="data">
+                  <h6>RS. 10L</h6>
+                  <p><span class="color-red">-18%</span> From the last month</p>
+                </div>
+              </div>
+            </div>
+            <canvas id="lineChart" width="375" height="325"></canvas>
+            <div id="tooltip" class="tooltip"></div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="sub-heading-solution">
+            <h4>PRODUCT & ENGINEERING</h4>
+            <p>Built to deliver an exceptional experience</p>
+            <button class="know-more">
+              <span>Know More &rarr;</span>
+            </button>
+          </div>
+          <div class="other-content">
+            <div class="border"></div>
+            <div class="icons-tech">
+              <div class="icon-box">
+                <i class="fa-solid fa-code" style="color: #3c59ee"></i>
+              </div>
+              <div class="icon-box">
+                <i class="fa-solid fa-gear" style="color: #979797"></i>
+              </div>
+              <div class="icon-box">
+                <i class="fa-solid fa-bullseye" style="color: #979797"></i>
+              </div>
+              <div class="icon-box">
+                <i class="fa-brands fa-hubspot" style="color: #979797"></i>
+              </div>
+            </div>
+            <img src="./images/laptop holding.png" alt="" />
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="sub-heading-solution">
+            <h4>CUSTOMER ENGAGEMENT PLATFORM</h4>
+            <p>All about personalization and engagement</p>
+            <button class="know-more">
+              <span>Know More &rarr;</span>
+            </button>
+          </div>
+          <div class="other-content">
+            <div class="border"></div>
+            <img src="./images/laptop.png" alt="" />
+            <div class="icons-tech">
+              <div class="icon-box">
+                <i class="fa-solid fa-water" style="color: #3c59ee"></i>
+              </div>
+              <div class="icon-box">
+                <i class="fa-solid fa-headset" style="color: #3c59ee"></i>
+              </div>
+              <div class="icon-box">
+                <i class="fa-solid fa-lightbulb" style="color: #3c59ee"></i>
+              </div>
+              <div class="icon-box">
+                <i class="fa-solid fa-message" style="color: #3c59ee"></i>
+              </div>
+              <div class="icon-box">
+                <i
+                  class="fa-solid fa-handshake-angle"
+                  style="color: #3c59ee"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solution Ends -->
+    <!-- Business Comprehensive Starts -->
+    <div class="business-comprihensive">
+      <div class="business-heading">
+        <h2>
+          Power up Your Business With
+          <span class="color-red">One Comprehensive Suite</span>
+        </h2>
+        <p>
+          Explore our products that seamlessly integrate into your existing
+          solutions, delivering exemplary<br />
+          performance across multiple platforms to bridge the gap between you
+          and your customers with<br />
+          personalized conversation and successful engagement.
+        </p>
+      </div>
+      <!-- In detail tab -->
+      <div class="tab-container">
+        <!-- Left Tabs as Buttons -->
+        <div class="tabs">
+          <button class="tab active" data-tab="tab-1">
+            Two Factor Authentication API
+          </button>
+          <button class="tab" data-tab="tab-2">
+            Omni-channel Programmable API
+          </button>
+          <button class="tab" data-tab="tab-3">
+            EMD - Equence Message Dispatcher
+          </button>
+          <button class="tab" data-tab="tab-4">
+            ECM - Equence Campaign Manager
+          </button>
+          <button class="tab" data-tab="tab-5">
+            Short & Long Code for 2-way Messaging
+          </button>
+        </div>
+
+        <!-- Right Tab Content -->
+        <div class="tab-content">
+          <div class="tab-panel active" id="tab-1">
+            <h3>Communication Channels</h3>
+            <p>
+              Create omnichannel conversations with customers, build a potential
+              user base, and encourage frequent interactions that drive customer
+              satisfaction and promote business growth globally.
+            </p>
+
+            <div class="accordion">
+              <!-- Accordion Item 1 (Open by Default) -->
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Message</span>
+                  <button class="accordion-toggle active">➔</button>
+                </div>
+                <div class="accordion-content" style="display: block">
+                  <div class="accordion-grid">
+                    <div>
+                      <h4>SMS</h4>
+                      <p>
+                        Deliver timely updates along with personalized messages
+                        to customers without fear of network connection and
+                        engagement barriers.
+                      </p>
+                    </div>
+                    <div>
+                      <h4>SMS Over IP</h4>
+                      <p>
+                        Share bulk messages and have interactive conversations
+                        automated and integrated with other systems.
+                      </p>
+                    </div>
+                    <div>
+                      <h4>Rich Communication Service</h4>
+                      <p>
+                        Create branded and engaging conversations without the
+                        need for specific carrier agreements.
+                      </p>
+                    </div>
+                    <div>
+                      <h4>Google Verified Message</h4>
+                      <p>
+                        Build credibility for your business and foster a sense
+                        of authenticity among users through verified messages.
+                      </p>
+                    </div>
+                    <div>
+                      <h4>WhatsApp Messaging Service</h4>
+                      <p>
+                        Tap into the chatbot that initiates human-like
+                        conversations and replies to queries about product
+                        information, pricing details, and general assistance.
+                      </p>
+                    </div>
+                    <div>
+                      <h4>Telegram Messaging</h4>
+                      <p>
+                        Broadcast messages to groups by providing a glimpse of
+                        shared URLs' content, making it a cost-effective
+                        communication channel for businesses.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2 -->
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Voice</span>
+                  <button class="accordion-toggle">➔</button>
+                </div>
+                <div class="accordion-content">
+                  <p>Voice-related communication content goes here.</p>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Email</span>
+                  <button class="accordion-toggle">➔</button>
+                </div>
+                <div class="accordion-content">
+                  <p>Email-related communication content goes here.</p>
+                </div>
+              </div>
+
+              <!-- Accordion Item 4 -->
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Mobile In-App Notification</span>
+                  <button class="accordion-toggle">➔</button>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Mobile in-app notification-related communication content
+                    goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="tab-2">
+            <h3>Omni-channel Programmable API</h3>
+            <p>
+              Build unified communication systems for messaging across multiple
+              platforms like SMS, WhatsApp, and Telegram. Simplify customer
+              engagement with a single API.
+            </p>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Message</span>
+                  <button class="accordion-toggle active">➔</button>
+                </div>
+                <div class="accordion-content" style="display: block">
+                  <div class="accordion-grid">
+                    <div>
+                      <h4>Unified Messaging</h4>
+                      <p>
+                        Deliver messages seamlessly across platforms such as
+                        SMS, WhatsApp, and social media with a single interface.
+                      </p>
+                    </div>
+                    <div>
+                      <h4>Integration</h4>
+                      <p>
+                        Easily integrate messaging APIs into existing
+                        applications and systems for smooth workflows.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Voice</span>
+                  <button class="accordion-toggle">➔</button>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Enable voice messaging and calls as part of your
+                    communication ecosystem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-3">
+            <h3>EMD - Equence Message Dispatcher</h3>
+            <p>
+              Automate your messaging workflows to reach customers at the right
+              time and through the right channel. Streamline dispatch with
+              intelligent scheduling.
+            </p>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Scheduling</span>
+                  <button class="accordion-toggle active">➔</button>
+                </div>
+                <div class="accordion-content" style="display: block">
+                  <div class="accordion-grid">
+                    <div>
+                      <h4>Trigger-Based</h4>
+                      <p>
+                        Set triggers for automated messaging based on customer
+                        activity or specific time schedules.
+                      </p>
+                    </div>
+                    <div>
+                      <h4>Channel Priority</h4>
+                      <p>
+                        Prioritize communication channels to ensure messages are
+                        received even if the primary channel is unavailable.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-4">
+            <h3>ECM - Equence Campaign Manager</h3>
+            <p>
+              Design, execute, and analyze marketing campaigns using ECM tools.
+              Create personalized and impactful campaigns that resonate with
+              your audience.
+            </p>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Campaign Tools</span>
+                  <button class="accordion-toggle active">➔</button>
+                </div>
+                <div class="accordion-content" style="display: block">
+                  <div class="accordion-grid">
+                    <div>
+                      <h4>Segmentation</h4>
+                      <p>
+                        Use advanced segmentation tools to target specific
+                        customer groups for higher engagement.
+                      </p>
+                    </div>
+                    <div>
+                      <h4>Performance Metrics</h4>
+                      <p>
+                        Real-time analytics to monitor campaign effectiveness
+                        and ROI.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-5">
+            <h3>Short & Long Code for 2-way Messaging</h3>
+            <p>
+              Facilitate two-way communication between businesses and customers
+              using short and long codes. Empower your customers to interact
+              directly for inquiries and feedback.
+            </p>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Features</span>
+                  <button class="accordion-toggle active">➔</button>
+                </div>
+                <div class="accordion-content" style="display: block">
+                  <div class="accordion-grid">
+                    <div>
+                      <h4>Interactive Messaging</h4>
+                      <p>
+                        Customers can respond directly to promotional and
+                        transactional messages.
+                      </p>
+                    </div>
+                    <div>
+                      <h4>Survey & Feedback</h4>
+                      <p>
+                        Easily collect responses from customers for surveys or
+                        product feedback.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Business Comprehensive Ends -->
+
+    <!-- Clients starts -->
+    <div class="clients-container">
+      <h2>Clients</h2>
+      <div class="clients-grid">
+        <img src="./images/icici.png" alt="Client 1" />
+        <img src="./images/dcb bank.png" alt="Client 2" />
+        <img src="./images/godrej.png" alt="Client 3" />
+        <img src="./images/indusind.png" alt="Client 4" />
+        <img src="./images/isckon.png" alt="Client 5" />
+        <img src="./images/mahindra.png" alt="Client 6" />
+        <img src="./images/pizzahut.png" alt="Client 7" />
+      </div>
+    </div>
+    <!-- Clients ends -->
+
+    <!-- certification starts -->
+    <div class="certification-container">
+      <div class="certificate-content">
+        <h2>
+          Building Trust through <span class="color-red"> Credentials</span>
+        </h2>
+        <p>
+          Embrace Equence and embark on a journey of successful campaigns and
+          high-revenue marketing.
+        </p>
+      </div>
+      <div class="certification-icons">
+        <div>
+          <img src="./images/iso.png" alt="" />
+        </div>
+        <div>
+          <button class="know-more">
+            <span>Know More &rarr;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- certification ends -->
+
+    <!-- User base starts -->
+
+    <div class="half-ellipse"></div>
+    <div class="user-base-container">
+      <div class="unique-users">
+        <h2><span class="color-red">40 Million</span></h2>
+        <p>Unique user connections</p>
+      </div>
+      <div class="unique-users">
+        <h2><span class="color-red">800+</span></h2>
+        <p>Brands</p>
+      </div>
+      <div class="unique-users">
+        <h2><span class="color-red">100%</span></h2>
+        <p>Brand Retentions</p>
+      </div>
+    </div>
+    <!-- User base ends -->
+
+    <!-- Personalised Sectors Starts -->
+    <div class="personalised-container">
+      <div class="sector-headings">
+        <h2>
+          Personalize Communication Across
+          <span class="color-red">All Sectors</span>
+        </h2>
+        <p>
+          As every industry is customer-centric, we empower your business to
+          streamline workflow and<br />
+          tailor solutions that foster strong user engagement and adoption.
+        </p>
+      </div>
+      <div class="different-sector-pack">
+        <div>
+          <span>eCommerce</span>
+          <div>
+            <p>
+              Automated chatbots initiate conversations and help gather insights
+              into customer preferences that help engage them at critical points
+              in the shopping journey.
+            </p>
+            <p>
+              Foster customer loyalty and repeat business interactions on their
+              preferred channels.
+            </p>
+            <button class="cta">
+              <span class="hover-underline-animation"> Shop now </span>
+              <svg
+                id="arrow-horizontal"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="10"
+                viewBox="0 0 46 16"
+              >
+                <path
+                  id="Path_10"
+                  data-name="Path 10"
+                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  transform="translate(30)"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div>
+          <span>Fintech</span>
+          <div>
+            <p>
+              Enhance financial transactions and deliver personalized
+              experiences by providing real-time notifications for withdrawals,
+              account balances, and fraud alerts using two-factor authentication
+              and customizable APIs.
+            </p>
+            <p>
+              Additionally, empower users with insights into their financial
+              behaviors, promoting transparency in security matters and enabling
+              them to make well-informed decisions.
+            </p>
+            <button class="cta">
+              <span class="hover-underline-animation"> Shop now </span>
+              <svg
+                id="arrow-horizontal"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="10"
+                viewBox="0 0 46 16"
+              >
+                <path
+                  id="Path_10"
+                  data-name="Path 10"
+                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  transform="translate(30)"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div>
+          <span>Education</span>
+          <div>
+            <p>
+              Virtual assistants provide immediate help and answers to student
+              queries, revolutionizing the educational experience.
+            </p>
+            <p>
+              Engage students from diverse backgrounds actively, enrich their
+              learning performance effectively, and assist schools in informing
+              parents about the latest events, students' progress, and safety
+              practices through a more connected, informed and engaging service.
+            </p>
+            <button class="cta">
+              <span class="hover-underline-animation"> Shop now </span>
+              <svg
+                id="arrow-horizontal"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="10"
+                viewBox="0 0 46 16"
+              >
+                <path
+                  id="Path_10"
+                  data-name="Path 10"
+                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  transform="translate(30)"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div>
+          <span>Healthcare</span>
+          <div>
+            <p>
+              Live chat support facilitates patient interactions, providing
+              tailored health information, appointment reminders, and wellness
+              tips.
+            </p>
+            <p>
+              The optimized medical process enhances patients' experiences and
+              improves disease management.
+            </p>
+            <button class="cta">
+              <span class="hover-underline-animation"> Shop now </span>
+              <svg
+                id="arrow-horizontal"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="10"
+                viewBox="0 0 46 16"
+              >
+                <path
+                  id="Path_10"
+                  data-name="Path 10"
+                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  transform="translate(30)"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Personalised Sectors Ends -->
+
+    <!-- Testimonials section starts -->
+    <div class="testimonials-container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial active">
+          <img
+            src="./images/testi1.png"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <p>
+            "The Equence platform was instrumental in our path to becoming the
+            4th largest diagnostic company in India. Their invaluable support in
+            our lead generation campaigns generated a strong ROI. Their
+            real-time analytics were pivotal for conducting effective A/B
+            testing and optimizing our marketing initiatives when needed. I
+            wholeheartedly recommend their services."
+          </p>
+          <h3>Aishwarya Vasudevan</h3>
+          <p class="designation">Group Chief Operating Officer</p>
+          <img
+            src="./images/neuberg.png"
+            alt="Company Logo"
+            class="company-logo"
+          />
+        </div>
+        <div class="testimonial">
+          <img
+            src="./images/person_one.webp"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <p>
+            "The Equence platform was instrumental in our path to becoming the
+            4th largest diagnostic company in India. Their invaluable support in
+            our lead generation campaigns generated a strong ROI. Their
+            real-time analytics were pivotal for conducting effective A/B
+            testing and optimizing our marketing initiatives when needed. I
+            wholeheartedly recommend their services."
+          </p>
+          <h3>Aishwarya Vasudevan</h3>
+          <p class="designation">Group Chief Operating Officer</p>
+          <img
+            src="./images/neuberg.png"
+            alt="Company Logo"
+            class="company-logo"
+          />
+        </div>
+        <div class="testimonial">
+          <img
+            src="./images/person_four.webp"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <p>
+            "The Equence platform was instrumental in our path to becoming the
+            4th largest diagnostic company in India. Their invaluable support in
+            our lead generation campaigns generated a strong ROI. Their
+            real-time analytics were pivotal for conducting effective A/B
+            testing and optimizing our marketing initiatives when needed. I
+            wholeheartedly recommend their services."
+          </p>
+          <h3>Aishwarya Vasudevan</h3>
+          <p class="designation">Group Chief Operating Officer</p>
+          <img src="./images/neuberg.png" class="company-logo" />
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="prev">&larr;</button>
+        <button class="next">&rarr;</button>
+      </div>
+    </div>
+    <!-- Testimonials section ends -->
+
+    <!-- Client Wins Starts -->
+    <div class="client-winner-container">
+      <h2>Client <span class="color-red">Wins</span></h2>
+
+      <!-- Tab Buttons -->
+      <div class="tab-buttons">
+        <button class="tab-button active" data-tab="tab1">
+          Connect and Heal
+        </button>
+        <button class="tab-button" data-tab="tab2">Mahindra</button>
+        <button class="tab-button" data-tab="tab3">ICICI Bank</button>
+      </div>
+
+      <!-- Tab Content -->
+      <div id="tab1" class="tab-content-wrapper active">
+        <div class="tab-content-left">
+          <img
+            src="./images/connect-and-heal.png"
+            alt="Connect and Heal Logo"
+          />
+          <h3>Connect and Heal</h3>
+          <p>
+            We wanted to bring about a change in our customer’s health and how
+            they can keep track of their health. With Equence’s help, we were
+            able to build a patient-centric work model that helped us and our
+            customers have a win-win situation.
+          </p>
+        </div>
+        <div class="tab-content-right">
+          <h3>Increased Patient Engagement Via WhatsApp ChatBot</h3>
+          <p>
+            Connect and Heal implemented Equence’s WhatsApp ChatBot, which
+            transformed the way patients approach healthcare services. Through
+            this, remote health monitoring and real-time tracking and reminding
+            of patients' health data witnessed remarkable user engagement and
+            gained a competitive edge in the industry.
+          </p>
+          <div class="stats-section">
+            <div>
+              <p>--</p>
+              <p>No of real-time data generated</p>
+            </div>
+            <div>
+              <p>--</p>
+              <p>Reminders were achieved</p>
+            </div>
+            <div>
+              <p class="highlight">40%</p>
+              <p>Increase in patient engagement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab2" class="tab-content-wrapper" style="display: none">
+        <div class="tab-content-left">
+          <img src="./images/mahindra.png" alt="Mahindra Logo" />
+          <h3>Mahindra</h3>
+          <p>
+            Mahindra's story with Equence includes enhanced customer
+            satisfaction and operational efficiency through innovative
+            solutions.
+          </p>
+        </div>
+        <div class="tab-content-right">
+          <h3>Driving Digital Transformation</h3>
+          <p>
+            Equence helped Mahindra transition to digital operations, reducing
+            costs and improving workflow efficiency across various domains.
+          </p>
+        </div>
+      </div>
+
+      <div id="tab3" class="tab-content-wrapper" style="display: none">
+        <div class="tab-content-left">
+          <img src="./images/icici.png" alt="ICICI Bank Logo" />
+          <h3>ICICI Bank</h3>
+          <p>
+            ICICI Bank achieved groundbreaking results with Equence,
+            transforming the banking experience for their customers.
+          </p>
+        </div>
+        <div class="tab-content-right">
+          <h3>Enhancing Customer Satisfaction</h3>
+          <p>
+            Equence’s innovative tools allowed ICICI Bank to offer personalized
+            banking services, creating a seamless and enjoyable customer
+            experience.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Client Wins Ends -->
+
+    <!-- Uninterrupted Experience Starts -->
+    <div class="uninterrupted-experience-container">
+      <h2>
+        Experience the Power of Uninterrupted and<br />Insightful Communications
+        Today with Equence
+      </h2>
+      <p>Built for your business. Sign up and Stay Competitive</p>
+      <button class="contact-btn">Contact Us</button>
+    </div>
+    <!-- Uninterrupted Experience Ends -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="important-links">
+        <div class="navigator-links">
+          <ul>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Menu</a></li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="" class="socials"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="" class="socials"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="" class="socials"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="seperator"></div>
+      <div class="copyrights">
+        <p>&copy; 2023 equence</p>
+        <p>all rights reserved</p>
+      </div>
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>

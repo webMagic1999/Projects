@@ -906,7 +906,7 @@ main {
 }
 
 .footer-logo img {
-    width: 15%;
+    width: 50%;
     margin-bottom: 10px;
 }
 
@@ -967,13 +967,10 @@ main {
         display: block;
     }
 
-    /* navbar fixed ar top */
-    /* Initial style for the header */
+    /* navbar fixed at top */
     .desktop-nav {
-        position: relative;
-        /* Initially set to relative */
+        /* position: relative; */
         transition: all 0.3s ease-in-out;
-        /* Add transition for all properties */
     }
 
     /* Style changes when the header is fixed */
@@ -983,10 +980,8 @@ main {
         left: 0;
         width: 100%;
         background-color: #ffffff;
-        /* Change this to your desired background color */
         z-index: 100;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        /* Add a shadow effect if needed */
     }
 
     /* navbar fixed ar top */

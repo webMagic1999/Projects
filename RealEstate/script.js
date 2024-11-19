@@ -20,10 +20,10 @@ function stickyNavbar() {
 window.addEventListener('scroll', stickyNavbar);
 
 
-menuButton.addEventListener('click', ()=>{
+menuButton.addEventListener('click', () => {
     menuList.classList.toggle('hide')
-    if( !menuList.classList.contains('hide')){
-        
+    if (!menuList.classList.contains('hide')) {
+
         header.style.backgroundColor = '#ffffff'
         menuButton.style.color = '#000000'
     } else {
@@ -75,15 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-menuList.addEventListener('click', function(e){
-
-
+menuList.addEventListener('click', function (e) {
     // smooth navigation scroll
     e.preventDefault()
-    if(e.target.classList.contains('nav-scroll-link')){
+    if (e.target.classList.contains('nav-scroll-link')) {
         const id = e.target.getAttribute('href');
         const element = document.querySelector(id);
-        element.scrollIntoView({behavior : 'smooth'})
+        element.scrollIntoView({ behavior: 'smooth' })
     }
 })
 

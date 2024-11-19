@@ -7,7 +7,6 @@
 // });
 
 
-
 const header = document.querySelector('header');
 header.innerHTML = `<nav>
             <div class="logo-menu-wrapper">
@@ -349,4 +348,4 @@ footerWrapper.innerHTML = `<div class="chair-image">
             </div>
             <div class="copyrights">
                 <p>Credits for the design to @themewagon.</p>
-            </div>`
+            </div>`;

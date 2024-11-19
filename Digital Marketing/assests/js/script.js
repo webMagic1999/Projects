@@ -3,14 +3,14 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("overlay").style.display = "block"; // Show the overlay
-    document.getElementById("open-btn").style.display = "none";
+    // document.getElementById("open-btn").style.display = "none";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("overlay").style.display = "none"; // Hide the overlay
-    document.getElementById("menu-icon").style.display = "block";
-    document.getElementById("open-btn").style.display = "block";
+    // document.getElementById("menu-icon").style.display = "block";
+    // document.getElementById("open-btn").style.display = "block";
 }
 
 function toggleNav() {
@@ -55,42 +55,6 @@ function toggleServicesSubMenu() {
 // sidenav script
 // mobile menu end
 
-// counter script
-function animateCounter(finalValue, elementId, symbol = '') {
-    let current = 0;
-    const counter = document.getElementById(elementId);
-    const increment = finalValue / 100; // Increment rate
-
-    const interval = setInterval(() => {
-        current += increment;
-        if (current >= finalValue) {
-            clearInterval(interval);
-            current = finalValue;
-        }
-
-        if (symbol === '%' && finalValue === 100) {
-            counter.textContent = Math.round(current) + '%';
-        } else if (symbol === 'k+' && finalValue >= 1000) {
-            counter.textContent = Math.round(current / 1000) + 'k+';
-        } else if (symbol === '+' && finalValue > 1) {
-            counter.textContent = Math.round(current) + '+';
-        } else {
-            counter.textContent = Math.round(current);
-        }
-    }, 50); // Change the interval duration for smoother or faster animation
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Call the animateCounter function for each counter
-    animateCounter(79, 'counter1', '%'); // Counter 1: 0% to 100%
-    animateCounter(2000, 'counter2', 'k+'); // Counter 2: 0k to 3000+
-    animateCounter(33, 'counter3'); // Counter 3: 0 to 78
-    animateCounter(20, 'counter4', '+'); // Counter 4: 0 to 35+
-});
-
-
-// counter script
-
 
 // form script 
 
@@ -105,3 +69,20 @@ function hideContent(element) {
     element.querySelector('.additional-content').style.display = 'none';
 }
 
+
+const heroContent = document.querySelector('.hero-content');
+const nav = document.querySelector('.desktop-nav');
+
+const stcikyNav = function(entries){
+    const [entry] = entries;
+    
+    if(!entry.isIntersecting){
+        nav.classList.add('fixed')
+    } else {
+        nav.classList.remove('fixed')
+    }
+}
+
+const heroObserver = new IntersectionObserver(stcikyNav, {root:null, threshold : 0, rootMargin : `-${nav.getBoundingClientRect().height}px`})
+
+heroObserver.observe(heroContent);

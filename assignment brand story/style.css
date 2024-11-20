@@ -687,7 +687,7 @@ h6 {
 }
 
 .different-sector-pack > div {
-  /* height: 22rem; */
+  height: 22rem;
   background: #ffffff;
   box-shadow: 0px 0px 5px #b8bac4;
   border-radius: 0.5rem;
@@ -1172,6 +1172,10 @@ footer {
   .different-sector-pack {
     grid-template-columns: 1fr; /* One column layout */
     padding: 0;
+  }
+
+  .different-sector-pack > div {
+    height: 100%;
   }
 
   .testimonial p {

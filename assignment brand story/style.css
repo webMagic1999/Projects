@@ -57,6 +57,9 @@ a {
   position: relative;
   font-size: 0.875rem;
   transition: all 0.3s ease-in-out;
+  &:hover {
+    padding-bottom: 0.5rem;
+  }
 }
 
 .nav-links a:not(.contact-btn)::after {
@@ -67,7 +70,7 @@ a {
   width: 0%;
   height: 2px;
   background-color: #ffb703;
-  transition: width 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-links a:hover::after {

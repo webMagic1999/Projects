@@ -7,18 +7,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   margin-top: 55px; /* Prevent content from being hidden behind the navbar */
-  overflow: scroll; /* Enables scrolling */
-}
-
-::-webkit-scrollbar {
-  width: 0; /* Hides the scrollbar */
-  background: transparent; /* Makes sure there’s no visible scrollbar */
-}
-
-/* For Firefox */
-html {
-  scrollbar-width: none; /* Hides the scrollbar */
-  scroll-behavior: smooth;
 }
 
 h1,
